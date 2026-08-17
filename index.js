@@ -22,21 +22,10 @@ const slash = require('./Handler/slash');
 const { registros, configuracoes, Licensa, PullRequest, General } = require('./DataBaseJson');
 const { generateToken } = require('./Functions/GerenciarAuth');
 
+client.slashCommands = new Collection();
+
 slash.run(client)
 events.run(client)
-
-// client.on('messageCreate', async message => {
-//     if (message.channel.id === '1252467628404899860') {
-//         if (message.member.permissions.has('Administrator')) return;
-//         message.delete();
-//     }
-// })
-
-
-
-// token removido
-
-client.slashCommands = new Collection();
 
 
 process.on('unhandRejection', (reason, promise) => {
