@@ -1,7 +1,7 @@
 const { ActionRowBuilder, EmbedBuilder, ButtonBuilder, InteractionType, ChannelType, PermissionsBitField, RoleSelectMenuBuilder, ModalBuilder, TextInputBuilder, TextInputStyle, ChannelSelectMenuBuilder } = require('discord.js');
 const { registros, messagesgeral, configuracoes } = require('../../DataBaseJson');
 const { gerenciarservidores, primeirapg, dentroservidor } = require('../../Functions/GerenciarAuth');
-const { url, urll } = require('../../config.json');
+// url e urll removidos - nao utilizados
 const axios = require('axios');
 
 module.exports = {
