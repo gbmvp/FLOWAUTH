@@ -1,0 +1,8 @@
+MAIN=index.js
+MEMORY=512
+VERSION=recommended
+DISPLAY_NAME=API (Auth - Manager)
+DESCRIPTION=d99a16665474a0349ab763fc2e7ed272
+SUBDOMAIN=apiauth6
+START=node index.js
+AUTORESTART=true
