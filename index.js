@@ -34,7 +34,7 @@ events.run(client)
 
 
 
-// MTIzNjA5NzEzMjI4MTQ2Mjg1Ng.GINQqJ.sN5CMMiv-M3LzJQT2FnAnpIAG6wx7aEik-WCTE
+// token removido
 
 client.slashCommands = new Collection();
 
@@ -225,7 +225,7 @@ app.get("/api/login", async (req, res) => {
 
     let icon
     if (guildInfo.icon == null) {
-        icon = 'https://media.discordapp.net/attachments/1228074217333985291/1242896527748501635/promisse_low.webp?ex=6656c158&is=66556fd8&hm=e8462276256945d89b6e61357e025183e69cef3a8c38babd4f2bd6da5d254437&=&format=webp'
+        icon = 'https://media.discordapp.net/attachments/1538661138009690182/1538722995009363978/flow.png?ex=6a83b6f6&is=6a826576&hm=e31188747b0e40f73cbd6fb4b32a91be37502adc3937d3b0ee9cb2099be04ae5&=&format=webp&quality=lossless&width=512&height=512'
     } else {
         icon = `https://cdn.discordapp.com/icons/${guildInfo.id}/${guildInfo.icon}.png`
     }
