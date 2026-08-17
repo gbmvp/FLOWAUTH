@@ -49,7 +49,15 @@ process.on('uncaughtExceptionMonitor', (error, origin) => {
     console.log(`🚫 Erro Detectado:\n\n` + error, origin)
 });
 
-const { token, port } = require("./config.json");
+let token, port;
+try {
+    const config = require("./config.json");
+    token = config.token;
+    port = config.port;
+} catch (e) {
+    token = process.env.token;
+    port = process.env.PORT || process.env.port || 8080;
+}
 client.login(token);
 
 /*try {
